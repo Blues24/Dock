@@ -1,0 +1,67 @@
+/* Private property dont touch*/
+:root{
+    --background-color: #85dcb8;
+    --primaryColor: #edf5e1;
+    --secondaryColor: #FBEEC1;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    background-color: var(--background-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--secondaryColor);
+}
+
+#btn{
+    min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  background-color: #58acff
+}
+#btn:hover{
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left:8px;
+}
+#btn:hover:after{
+    opacity: 1;
+    right: 10px;
+}
+#btn:after{
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+}
+
+.glass{
+    background: rgba(255,255,255,0.2);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(3.1px);
+    -webkit-backdrop-filter: blur(3.1px);
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+h1{
+    text-align: center;
+}
