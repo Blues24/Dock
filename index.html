@@ -8,14 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ <main>
     <h1 id="text"></h1>
     <div class="glass">
     <h2>Click to go to Port #1</h2>
-    <button id="btn"><a href="https://github.com/Blues24/Port">CLICK ME</a></button>
+    <button id="btn"><a href="https://github.com/Blues24/Port" target="_blank">CLICK ME</a></button>
     <h2>Click to go to Port #2</h2>
-   <button id="btn"><a href="https://github.com/Blues24/Port2">CLICK ME</a></button>
+    <button id="btn"><a href="https://github.com/Blues24/Port2" target="_blank">CLICK ME</a></button>
+    
     </div>
-   <script src="script.js"></script>
+    <a href="https://github.com/Blues24" target="_blank"><i class="fa-brands fa-github">Credit to Blues24</i></a>
+    
+ </main>
+    
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/81ed8a810c.js" crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('focus',()=>{
+            document.title =  "Hey it's you again"
+        })
+        window.addEventListener('blur',()=>{
+            document.title = "Thank you"
+        })
+    </script>
 </body>
 </html>

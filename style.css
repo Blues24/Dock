@@ -2,38 +2,42 @@
 :root{
     --background-color: #85dcb8;
     --primaryColor: #edf5e1;
-    --secondaryColor: #FBEEC1;
+    --secondaryColor: #25d1c5;
+    --gradient-color:  ;
 }
 
 body{
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2em;
-    background-color: var(--background-color);
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 33%, #2B86C5 66%, #00d2ff 100%);
+
+
 }
 
 a{
     text-decoration: none;
-    color: var(--secondaryColor);
+    color: var(--seco1ndaryColor);
 }
 
 #btn{
-    min-width: 130px;
-  height: 40px;
-  color: #fff;
-  padding: 5px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  overflow: hidden;
-  border-radius: 5px;
-  border: none;
-  background-color: #58acff
+    min-width: 140px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 15px;
+    border: none;
+    background-color: #58acff
 }
 #btn:hover{
-    border-radius: 5px;
+    border-radius: 15px;
     padding-right: 24px;
     padding-left:8px;
 }
@@ -55,8 +59,8 @@ a{
 .glass{
     background: rgba(255,255,255,0.2);
     box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-    backdrop-filter: blur(3.1px);
-    -webkit-backdrop-filter: blur(3.1px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     border-radius: 10px;
     text-align: center;
     
@@ -64,4 +68,12 @@ a{
 
 h1{
     text-align: center;
+}
+.navigation{
+    padding: 5px;
+}
+
+main{
+    text-align: center;
+    
 }
