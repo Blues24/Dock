@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
+    <script src="api.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Warna yang dapat disesuaikan */
+        :root {
+            --warna-utama: #1a202c; /* Warna utama untuk judul */
+            --warna-sekunder: #e2e8f0; /* Warna sekunder untuk latar belakang */
+            --warna-teks: #2d3748; /* Warna teks */
+        }
+        .striked-text {
+            text-decoration: line-through;
+            color: rgba(128, 128, 128, 0.35);
+        }
+        /* Gaya kustom untuk elemen pre */
+        pre.resume {
+            background-color: var(--warna-sekunder); /* Setel warna latar belakang */
+            color: var(--warna-teks); /* Setel warna teks */
+            padding: 1.5rem; /* Tambahkan padding */
+            border-radius: 0.5rem; /* Tambahkan radius border untuk sudut melengkung */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Efek bayangan */
+            display: inline-block; /* Pastikan border membungkus konten */
+        }
+        button {
+    padding: 15px 20px;
+    background-color: #00c8ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: auto; /* Gunakan lebar otomatis */
+    max-width: 100%; /* Lebar maksimum tombol (maksimum lebar kontainer) */
+    box-sizing: border-box; /* Jaga agar padding tidak menambah ukuran tombol */
+    white-space: nowrap; /* Pastikan teks tidak pindah baris */
+}
+#hiddenText {
+    display: none; /* Sembunyikan teks "Ica Nafisah" secara default */
+}
+/* Animasi saat tombol dihover */
+button:hover {
+    background-color: #1131e5; /* Ubah warna latar belakang saat dihover */
+    transform: scale(1.05); /* Perbesar ukuran tombol saat dihover */
+}
+        /* Gaya untuk teks sekolah */
+        .school {
+            cursor: pointer; /* Ubah kursor menjadi tangan saat diarahkan ke teks sekolah */
+            text-decoration: none; /* Hilangkan garis bawah */
+        }
+
+        h1{
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold mb-4" style="color: var(--warna-utama) ">Blues24</h1>
+        <hr class="mb-4">
+        <p class="mb-2">Atau</p>
+        <p class="mb-4" style="color: var(--warna-teks);">Saya boleh memanggil</p>
+        <!-- Konten Resume -->
+        <pre class="resume mb-4">Mohamad Luckman Afandi
+Lahir: 10 April 2007
+Lokasi: Indramayu, Indonesia
+
+Ringkasan:
+Individu yang termotivasi dan antusias dengan hasrat untuk belajar. Saat ini sedang menjelajahi HTML dan berbagai bahasa pemrograman lainnya.Dan yang selalu tidak beruntung pada urusan percintaan
+
+Pendidikan:
+- Sekolah Dasar: <span class="school" onclick="checkPassword('SD LEMAHMEKAR 3')">[SD LEMAHMEKAR 3]</span>, [2013] - [2019]
+- Sekolah Menengah Pertama: <span class="school" onclick="checkPassword('SMP 3 SINDANG')">[SMP 3 SINDANG]</span>, [2019] - [2022]
+- Sekolah Menengah Atas: <span class="school" onclick="checkPassword('SMKN 1 SINDANG')">[SMKN 1 SINDANG]</span>, [2022] - [2025]
+
+Keterampilan:
+- HTML
+- CSS
+- JavaScript
+- PLC
+- TEKNIK ELEKTRO
+
+Pengalaman:
+-
+</pre>
+        <h2 class="text-xl font-bold mb-4">CATATAN</h2>
+        <hr>
+        <p class="mb-4">Halo ini catatan saya atau diari apa pun yang Anda suka sebut
+        <hr>
+        </p>
+        <p class="mb-5">
+        <!-- HTML -->
+<!-- HTML -->
+<p id="paragraph">Catatan #1:
+    
+    Di tahun kedua saya di sekolah ini, saya memiliki perasaan pada teman sekelas saya yang bernama <span id="hiddenText" style="display: visible;">Unknown</span><span id="originalText" style="display: none;">Ica Nafisah</span> dan kenapa dia sering muncul dalam mimpiku sehingga sedikit membuat ku sedih karena tidak bisa berhenti memikirkannya,setiap saat dan dimana saja aku memikirkannya karena aku merasakan sesuatu, apakah itu cinta? atau hal lain yang saya tidak tahu
+</p><br>
+<pre>Catatan #2
+    12-03-2024
+Handphone ku rusak dan aku bingung karena kartu sim ku juga hilang dan
+aku akan kehilangan semuanya dan harus memulai dari 0,
+lagi entah lah apakah ini sebuah peringatan dari siapa,
+yah sedari awal juga Handphone ku rusak juga karena diriku juga yang ceroboh 😃😃
+</pre>
+
+        <p>Aku akan segera melakukan update lagi</p>
+        <pre class="striked-text"color: gray; opacity: 60%;>Website ini mempunyai puzzle untuk melengkapi Catatan #1</pre>
+    </div>

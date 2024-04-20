@@ -1,95 +1,51 @@
-/* Private property dont touch*/
-:root{
-    --background-color: #85dcb8;
-    --primaryColor: #edf5e1;
-    --secondaryColor: #25d1c5;
-    --gradient-color:  ;
-}
-
-body{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2em;
-    background-color: #FF3CAC;
-    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 33%, #2B86C5 66%, #00d2ff 100%);
-
-
-}
-
-a{
-    text-decoration: none;
-    color: var(--seco1ndaryColor);
-}
-
-#btn{
-    min-width: 140px;
-    height: 40px;
+root {
+            --warna-utama: #2f2f2a; /* Warna utama untuk judul */
+            --warna-sekunder: #e2e8f0; /* Warna sekunder untuk latar belakang */
+            --warna-teks: #2d3748; /* Warna teks */
+        }
+        .striked-text {
+            text-decoration: line-through;
+            color: rgba(128, 128, 128, 0.35);
+        }
+        /* Gaya kustom untuk elemen pre */
+        pre.resume {
+            background-color: var(--warna-sekunder); /* Setel warna latar belakang */
+            color: var(--warna-teks); /* Setel warna teks */
+            padding: 1.5rem; /* Tambahkan padding */
+            border-radius: 0.5rem; /* Tambahkan radius border untuk sudut melengkung */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Efek bayangan */
+            display: inline-block; /* Pastikan border membungkus konten */
+        }
+        button {
+    padding: 15px 20px;
+    background-color: #00c8ff;
     color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    overflow: hidden;
-    border-radius: 15px;
     border: none;
-    background-color: #58acff
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: auto; /* Gunakan lebar otomatis */
+    max-width: 100%; /* Lebar maksimum tombol (maksimum lebar kontainer) */
+    box-sizing: border-box; /* Jaga agar padding tidak menambah ukuran tombol */
+    white-space: nowrap; /* Pastikan teks tidak pindah baris */
 }
-#btn:hover{
-    border-radius: 15px;
-    padding-right: 24px;
-    padding-left:8px;
+#hiddenText {
+    display: none; /* Sembunyikan teks "Ica Nafisah" secara default */
 }
-#btn:hover:after{
-    opacity: 1;
-    right: 10px;
+/* Animasi saat tombol dihover */
+button:hover {
+    background-color: #1131e5; /* Ubah warna latar belakang saat dihover */
+    transform: scale(1.05); /* Perbesar ukuran tombol saat dihover */
 }
-#btn:after{
-    content: "\00BB";
-    position: absolute;
-    opacity: 0;
-    font-size: 20px;
-    line-height: 40px;
-    top: 0;
-    right: -20px;
-    transition: 0.4s;
-}
-
-.glass{
-    background: rgba(255,255,255,0.2);
-    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border-radius: 10px;
-    text-align: center;
-    
-}
-
-h1{
-    text-align: center;
-    animation: entry 3s ease-in 0s 1 normal forwards;
-}
-/*animation for h1*/
-@keyframes entry {
-	0% {
-		opacity: 0;
-		transform: rotate(-540deg) scale(0);
-		transform-origin: 50% 0;
-	}
-
-	100% {
-		opacity: 1;
-		transform: rotate(0) scale(1);
-		transform-origin: 50% 0;
-	}
-}
-
-.navigation{
-    padding: 5px;
-}
-
-main{
-    text-align: center;
+        /* Gaya untuk teks sekolah */
+        .school {
+            cursor: pointer; /* Ubah kursor menjadi tangan saat diarahkan ke teks sekolah */
+            text-decoration: none; /* Hilangkan garis bawah */
+        }
+.paragraph{
+    font-family:ui-rounded;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: slateblue;
     
 }

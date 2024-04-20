@@ -1,0 +1,105 @@
+/* Private property dont touch*/
+:root{
+    --background-color: #85dcb8;
+    --primaryColor: #edf5e1;
+    --secondaryColor: #25d1c5;
+    --gradient-color:  ;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 33%, #2B86C5 66%, #00d2ff 100%);
+
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--seco1ndaryColor);
+}
+
+#btn{
+    min-width: 140px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 15px;
+    border: none;
+    background-color: #58acff
+}
+#btn:hover{
+    border-radius: 15px;
+    padding-right: 24px;
+    padding-left:8px;
+}
+#btn:hover:after{
+    opacity: 1;
+    right: 10px;
+}
+#btn:after{
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+}
+
+.glass{
+    background: rgba(255,255,255,0.2);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+h1{
+    text-align: center;
+    animation: entry 3s ease-in 0s 1 normal forwards;
+}
+/*animation for h1*/
+@keyframes entry {
+	0% {
+		opacity: 0;
+		transform: rotate(-540deg) scale(0);
+		transform-origin: 50% 0;
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotate(0) scale(1);
+		transform-origin: 50% 0;
+	}
+}
+
+.navigation{
+    padding: 5px;
+}
+
+main{
+    text-align: center;
+    
+}
+.div{
+    background: rgba(68, 66, 66, 0.2);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2rem;
+    padding: 4px;
+}
