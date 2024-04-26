@@ -1,9 +1,11 @@
 {
-  "author": {"name": "Blues24"},
+  "author": {
+    "name": "Blues24"
+  },
   "description": "This project was made by Blues24",
-
   "dependencies": {
     "lozad": "^1.16.0",
+    "tar": "^7.0.1",
     "vanilla-lazyload": "^19.1.3"
   }
 }
