@@ -1,7 +1,7 @@
 #Project Dock
 Welcome to my project where i made some dock for my other repository via html 
 <h1 align="center">Hello i'm Blues24</h1>
-<h3 align="center">A self lean developer</h3>
+<h3 align="center">A self learn developer</h3>
 
 - 🔭 I’m currently working on [Private project the name of the project its dock](https://github.com/Blues24/dock)
 
